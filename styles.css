@@ -1,0 +1,340 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+}
+
+
+
+
+
+header {
+    background: #003366;
+    color: #ff4500;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #c0c0c0 3px solid;
+  }
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #ebc3b5;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+.hero {
+    background-color: #e2e2e2;
+    padding: 2em;
+    text-align: center;
+}
+
+.promociones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.promocion {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+    width: 45%;
+}
+
+.producto {
+    background-color: #afeaee;
+    border: 1px solid #7e6ce7;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #312c2c;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+
+
+
+
+.productoss {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .productos {
+    border: 1px solid #1b0341;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 200px; 
+    justify-content: center;
+  }
+  
+  .productos:hover {
+    transform: scale(1.05);
+  }
+  
+  .productos img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Ventanas Modales */
+  .modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(85, 7, 230, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #c70101;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(243, 146, 146);
+    text-decoration: none;
+  }
+  
+  .modal img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+
+/*ventana modales*/
+
+
+
+
+
+
+
+
+
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 15px;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 400px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .modal img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/*subtitulo*/
+
+
+.container {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+}
+
+.container h2 {
+    font-size: 24px;
+    color: #333;
+    /* Otros estilos según sea necesario */
+}
+
+
+/*imagenes con movimiento*/ 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+.Deportes-frame {
+	width: 900px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.Deportes-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.Deportes-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.Deportes-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+} 
+
+
+
+
+
+
+
+
+
+.buy-button, .remove-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.remove-button {
+    background-color: #f44336;
+}
+#cart {
+    border-top: 2px solid #ddd;
+    margin-top: 20px;
+    padding-top: 20px;
+}
